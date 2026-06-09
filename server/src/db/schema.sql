@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS world_cup_campaign;
+USE world_cup_campaign;
+
+CREATE TABLE IF NOT EXISTS campaign_registrations (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255) NOT NULL,
+  team_name VARCHAR(100) NOT NULL,
+  team_flag VARCHAR(10) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE KEY unique_email (email)
+);
+
+CREATE TABLE IF NOT EXISTS fifa_teams (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  flag VARCHAR(255) NOT NULL,
+  fifa_code VARCHAR(10) NOT NULL,
+  `groups` VARCHAR(10) NOT NULL,
+  choose_cound INT NOT NULL DEFAULT 0
+);

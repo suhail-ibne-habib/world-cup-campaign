@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -24,9 +24,12 @@ export default function Hero() {
               Win up to <span className="font-bold text-[#2DD4BF]">12 months FREE</span> Deal360.
             </p>
             <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="bg-red-400 hover:bg-red-500 text-white font-bold py-4 px-8 rounded-md transition duration-300 shadow-lg text-sm sm:text-base tracking-wide">
-                JOIN NOW - IT'S FREE
-              </button>
+              <Link
+                href="/join"
+                className="inline-block text-center bg-red-400 hover:bg-red-500 text-white font-bold py-4 px-8 rounded-md transition duration-300 shadow-lg text-sm sm:text-base tracking-wide"
+              >
+                JOIN NOW - IT&apos;S FREE
+              </Link>
               <button className="bg-transparent border-2 border-gray-600 text-white hover:bg-gray-800 font-bold py-4 px-8 rounded-md transition duration-300 text-sm sm:text-base tracking-wide">
                 VIEW PRIZES
               </button>

@@ -1,0 +1,27 @@
+USE world_cup_campaign;
+
+INSERT INTO fifa_teams (name, flag, fifa_code, `groups`, choose_cound) VALUES
+('Brazil', '🇧🇷', 'BRA', 'D', 0),
+('Argentina', '🇦🇷', 'ARG', 'J', 0),
+('France', '🇫🇷', 'FRA', 'I', 0),
+('England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'ENG', 'L', 0),
+('Spain', '🇪🇸', 'ESP', 'H', 0),
+('Germany', '🇩🇪', 'GER', 'A', 0),
+('Portugal', '🇵🇹', 'POR', 'K', 0),
+('Netherlands', '🇳🇱', 'NED', 'F', 0),
+('Belgium', '🇧🇪', 'BEL', 'C', 0),
+('Italy', '🇮🇹', 'ITA', 'G', 0),
+('Croatia', '🇭🇷', 'CRO', 'E', 0),
+('USA', '🇺🇸', 'USA', 'B', 0),
+('Mexico', '🇲🇽', 'MEX', 'A', 0),
+('Canada', '🇨🇦', 'CAN', 'B', 0),
+('Japan', '🇯🇵', 'JPN', 'C', 0),
+('South Korea', '🇰🇷', 'KOR', 'D', 0),
+('Morocco', '🇲🇦', 'MAR', 'E', 0),
+('Senegal', '🇸🇳', 'SEN', 'F', 0),
+('Uruguay', '🇺🇾', 'URU', 'G', 0),
+('Colombia', '🇨🇴', 'COL', 'H', 0),
+('Australia', '🇦🇺', 'AUS', 'I', 0),
+('Switzerland', '🇨🇭', 'SUI', 'J', 0),
+('Denmark', '🇩🇰', 'DEN', 'K', 0),
+('Poland', '🇵🇱', 'POL', 'L', 0);

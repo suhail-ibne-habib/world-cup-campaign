@@ -1,25 +1,11 @@
 import React from 'react';
+import TeamsGrid from '@/components/TeamsGrid';
 
 export default function TeamSelection() {
-  const teams = [
-    { name: 'Brazil', flag: '🇧🇷' },
-    { name: 'Argentina', flag: '🇦🇷' },
-    { name: 'France', flag: '🇫🇷' },
-    { name: 'England', flag: '🏴󠁧󠁢󠁥󠁮󠁧󠁿' },
-    { name: 'Spain', flag: '🇪🇸' },
-    { name: 'Germany', flag: '🇩🇪' },
-    { name: 'Portugal', flag: '🇵🇹' },
-    { name: 'Netherlands', flag: '🇳🇱' },
-    { name: 'Japan', flag: '🇯🇵' },
-    { name: 'Morocco', flag: '🇲🇦' },
-    { name: 'Uruguay', flag: '🇺🇾' }
-  ];
-
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Heading */}
         <div className="text-center mb-10 relative">
            <div className="absolute inset-0 flex items-center" aria-hidden="true">
              <div className="w-full border-t border-gray-200"></div>
@@ -34,28 +20,8 @@ export default function TeamSelection() {
            </p>
         </div>
 
-        {/* Teams Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {teams.map((team, index) => (
-            <div key={index} className="border border-gray-200 rounded-md p-4 flex items-center justify-start hover:border-[#2DD4BF] hover:shadow-sm transition cursor-pointer bg-white">
-              <span className="text-2xl mr-3" role="img" aria-label={`${team.name} flag`}>{team.flag}</span>
-              <span className="text-sm font-medium text-gray-700">{team.name}</span>
-            </div>
-          ))}
-          {/* View All Teams Button */}
-          <div className="border border-gray-200 rounded-md p-4 flex items-center justify-start hover:bg-gray-50 transition cursor-pointer bg-gray-50/50">
-             <div className="flex -space-x-2 mr-3">
-               <div className="w-6 h-6 rounded-full bg-teal-200 border-2 border-white flex items-center justify-center"></div>
-               <div className="w-6 h-6 rounded-full bg-teal-400 border-2 border-white flex items-center justify-center"></div>
-             </div>
-             <div className="flex flex-col">
-               <span className="text-xs font-semibold text-gray-800 leading-tight">View All</span>
-               <span className="text-xs font-semibold text-gray-800 leading-tight">Teams</span>
-             </div>
-          </div>
-        </div>
+        <TeamsGrid limit={11} showViewAll />
 
-        {/* Info Icons Below Grid */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8 border-t border-gray-100 pt-10">
           <div className="flex items-center justify-center md:justify-start">
             <div className="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center mr-4">
