@@ -4,46 +4,6 @@ Bulk create users for the World Cup Campaign.
 
 ## Endpoints
 
-### Verify email (join flow)
-
-```
-POST /api/users/verify-email
-```
-
-Public endpoint — no API key required. Used in the join form step 1 to check if an email exists in the `users` table.
-
-**Request:**
-```json
-{ "email": "jane@example.com" }
-```
-
-**Success (`200`):**
-```json
-{
-  "exists": true,
-  "message": "Email verified. You can continue to team selection.",
-  "user": {
-    "id": 1,
-    "userId": "USR-1001",
-    "name": "Jane Agent",
-    "email": "jane@example.com",
-    "userType": "agent",
-    "membershipStatus": "free",
-    "subscriptionPackage": "Basic"
-  }
-}
-```
-
-**Not found (`404`):**
-```json
-{
-  "exists": false,
-  "message": "This email is not registered with Deal360. Please sign up first or use your registered email."
-}
-```
-
----
-
 ### Bulk create users
 
 ```
@@ -57,13 +17,13 @@ This endpoint requires an API key. Set `USERS_API_KEY` in `server/.env`.
 Send the key using either header:
 
 ```
-X-API-Key: your_secret_key
+X-API-Key: wc_campaign_secret_key_2026
 ```
 
 or
 
 ```
-Authorization: Bearer your_secret_key
+Authorization: Bearer wc_campaign_secret_key_2026
 ```
 
 Requests without a valid key receive `401 Unauthorized`.
@@ -153,9 +113,9 @@ Enum values are always converted to lowercase before insert.
 ## Example (cURL)
 
 ```bash
-curl -X POST http://localhost:5000/api/users \
+curl -X POST https://floralwhite-porcupine-641191.hostingersite.com/api/users \
   -H "Content-Type: application/json" \
-  -H "X-API-Key: your_secret_key" \
+  -H "X-API-Key: wc_campaign_secret_key_2026" \
   -d '{
     "users": [
       {
@@ -169,13 +129,3 @@ curl -X POST http://localhost:5000/api/users \
     ]
   }'
 ```
-
-## Database Setup
-
-Run the users table migration:
-
-```bash
-mysql -u root -p world_cup_campaign < src/db/users-schema.sql
-```
-
-Or apply the SQL from `src/db/users-schema.sql` in phpMyAdmin.
