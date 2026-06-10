@@ -13,12 +13,12 @@ export default function MembersInfo() {
             <div className="bg-white rounded-xl p-8 text-center shadow-sm border border-gray-100 flex flex-col h-full">
               <h3 className="text-gray-800 font-bold uppercase tracking-wider mb-8 text-sm">Free Members</h3>
               <div className="flex-grow flex flex-col items-center justify-center">
-                <div className="w-24 h-24 bg-[#2DD4BF] rounded-full flex items-center justify-center mb-6">
+                <div className="w-24 h-24 bg-[#7FFFD4] rounded-full flex items-center justify-center mb-6">
                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
                 </div>
                 <p className="text-gray-800 font-bold text-lg mb-8">1 Random Team</p>
               </div>
-              <button className="w-full bg-[#2DD4BF] hover:bg-teal-500 text-white font-bold py-3 px-4 rounded transition duration-300">
+              <button className="w-full bg-[#7FFFD4] hover:bg-teal-500 text-white font-bold py-3 px-4 rounded transition duration-300">
                 JOIN FOR FREE
               </button>
             </div>
@@ -41,9 +41,9 @@ export default function MembersInfo() {
                   <span className="text-sm font-normal text-gray-600">+ 1 Team of Your Choice</span>
                 </p>
               </div>
-              <button className="w-full bg-red-400 hover:bg-red-500 text-white font-bold py-3 px-4 rounded transition duration-300 shadow-sm">
+              <a href="https://deal360.ae/en#plan" target="_blank" rel="noopener noreferrer" className="block text-center w-full bg-red-400 hover:bg-red-500 text-white font-bold py-3 px-4 rounded transition duration-300 shadow-sm">
                 VIEW PLANS
-              </button>
+              </a>
             </div>
 
           </div>
@@ -73,7 +73,7 @@ export default function MembersInfo() {
                 {/* Row 2 */}
                 <div className="flex items-center justify-between p-4 bg-white">
                   <div className="flex items-center">
-                    <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center text-[#2DD4BF] mr-3">🏆</div>
+                    <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center text-[#7FFFD4] mr-3">🏆</div>
                     <span className="font-medium text-gray-700">Group Stage</span>
                   </div>
                   <div className="bg-teal-400 text-white font-bold py-2 px-6 rounded-sm w-48 text-center text-sm shadow-sm">

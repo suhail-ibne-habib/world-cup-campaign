@@ -14,7 +14,7 @@ export default function Navbar() {
                 <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <span className="text-gray-800 font-extrabold tracking-tight">Deal360</span>
+              <span className="text-gray-800 font-extrabold tracking-tight">Deal 360</span>
             </div>
           </div>
 

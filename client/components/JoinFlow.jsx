@@ -101,7 +101,7 @@ export default function JoinFlow() {
               <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            Deal360
+            Deal 360
           </Link>
           <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">
             World Cup Challenge
@@ -156,7 +156,7 @@ export default function JoinFlow() {
                   Join the World Cup Challenge
                 </h1>
                 <p className="mt-3 text-gray-500 text-center text-sm sm:text-base">
-                  Enter your registered Deal360 email to get started. It&apos;s free!
+                  Enter your registered Deal 360 email to get started. It&apos;s free!
                 </p>
 
                 <form onSubmit={handleEmailContinue} className="mt-8">
@@ -198,7 +198,7 @@ export default function JoinFlow() {
                 </h1>
 
                 {verifiedUser && (
-                  <p className="mt-2 text-center text-sm text-[#2DD4BF] font-medium">
+                  <p className="mt-2 text-center text-sm text-[#7FFFD4] font-medium">
                     Welcome, {verifiedUser.name}
                   </p>
                 )}
@@ -269,8 +269,8 @@ export default function JoinFlow() {
 
             {step === 3 && (
               <div className="text-center">
-                <div className="mx-auto w-20 h-20 bg-[#2DD4BF]/10 rounded-full flex items-center justify-center mb-6">
-                  <svg className="w-10 h-10 text-[#2DD4BF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="mx-auto w-20 h-20 bg-[#7FFFD4]/10 rounded-full flex items-center justify-center mb-6">
+                  <svg className="w-10 h-10 text-[#7FFFD4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
@@ -280,8 +280,8 @@ export default function JoinFlow() {
                 </h1>
                 <p className="mt-3 text-gray-500 text-sm sm:text-base max-w-md mx-auto">
                   {alreadyJoined
-                    ? "You have already joined the Deal360 World Cup Challenge. Here are your teams."
-                    : "You've successfully joined the Deal360 World Cup Challenge. Good luck cheering for your teams!"}
+                    ? "You have already joined the Deal 360 World Cup Challenge. Here are your teams."
+                    : "You've successfully joined the Deal 360 World Cup Challenge. Good luck cheering for your teams!"}
                 </p>
 
                 <div className="mt-8 bg-gray-50 rounded-lg border border-gray-100 p-6 text-left space-y-4">

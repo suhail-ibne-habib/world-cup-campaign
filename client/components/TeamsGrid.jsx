@@ -73,10 +73,10 @@ export default function TeamsGrid({
               </div>
               <span
                 className={`shrink-0 text-xs font-semibold whitespace-nowrap ${
-                  slotsLeft <= 0 ? "text-gray-400" : "text-[#2DD4BF]"
+                  slotsLeft <= 0 ? "text-gray-400" : "text-[#7FFFD4]"
                 }`}
               >
-                {slotsLeft <= 0 ? "Full" : `${slotsLeft} Left`}
+                {slotsLeft <= 0 ? "Full" : "Available"}
               </span>
             </div>
           );
@@ -95,7 +95,7 @@ export default function TeamsGrid({
                     ? "border-gray-200 bg-gray-50 opacity-60 cursor-not-allowed"
                     : isSelected
                       ? "border-red-400 bg-red-50 shadow-sm ring-2 ring-red-400/20 cursor-pointer"
-                      : "border-gray-200 hover:border-[#2DD4BF] hover:shadow-sm bg-white cursor-pointer"
+                      : "border-gray-200 hover:border-[#7FFFD4] hover:shadow-sm bg-white cursor-pointer"
                 }`}
               >
                 {content}
@@ -109,7 +109,7 @@ export default function TeamsGrid({
               className={`border rounded-md p-4 flex items-center transition bg-white ${
                 slotsLeft <= 0
                   ? "border-gray-200 opacity-75"
-                  : "border-gray-200 hover:border-[#2DD4BF] hover:shadow-sm cursor-pointer"
+                  : "border-gray-200 hover:border-[#7FFFD4] hover:shadow-sm cursor-pointer"
               }`}
             >
               {content}

@@ -13,15 +13,15 @@ export default function Hero() {
           {/* Left Content */}
           <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
             <h2 className="text-sm font-semibold text-red-400 tracking-wider uppercase mb-2">
-              Deal360
+              Deal 360
             </h2>
             <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl lg:text-7xl">
               <span className="block">WORLD CUP</span>
               <span className="block text-red-400">CHALLENGE</span>
             </h1>
             <p className="mt-6 text-xl text-gray-300 sm:text-2xl font-light">
-              One tournament. Two chances.<br/>
-              Win up to <span className="font-bold text-[#2DD4BF]">12 months FREE</span> Deal360.
+              <span className="font-bold text-[#2DD4BF]">Win 12 months free</span><br/>
+              <span className="text-yellow-500">If your team win the World Cup , you win a prize. We also have prizes for 2nd place and 3rd place too.</span>
             </p>
             <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
@@ -30,9 +30,9 @@ export default function Hero() {
               >
                 JOIN NOW - IT&apos;S FREE
               </Link>
-              <button className="bg-transparent border-2 border-gray-600 text-white hover:bg-gray-800 font-bold py-4 px-8 rounded-md transition duration-300 text-sm sm:text-base tracking-wide">
-                VIEW PRIZES
-              </button>
+              <a href="https://deal360.ae/en#plan" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-gray-600 text-white hover:bg-gray-800 font-bold py-4 px-8 rounded-md transition duration-300 text-sm sm:text-base tracking-wide text-center">
+                VIEW PLANS
+              </a>
             </div>
             
             {/* Small info text */}
@@ -55,52 +55,22 @@ export default function Hero() {
           {/* Right Content - Trophy & Prize Box */}
           <div className="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6 relative">
              <div className="flex flex-col items-center justify-center relative h-full">
-                {/* We use a placeholder image or a trophy image if available. Since it's a mock, we can style the prize box prominently */}
                 <div className="bg-[#112240] rounded-xl border border-gray-700 shadow-2xl overflow-hidden w-full max-w-md mx-auto relative z-20">
-                  <div className="p-6 text-center border-b border-gray-700">
-                    <h3 className="text-gray-300 text-sm font-semibold uppercase tracking-wider">The earlier you join,</h3>
-                    <h2 className="text-[#2DD4BF] text-xl sm:text-2xl font-bold uppercase mt-1">The bigger the prize</h2>
-                  </div>
-                  <div className="flex flex-col">
-                    {/* Tier 1 */}
-                    <div className="flex items-center p-4 border-b border-gray-700 bg-gray-800/30">
-                      <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-yellow-500/20 rounded-full">
-                         🏆
-                      </div>
-                      <div className="ml-4">
-                        <p className="text-xs text-gray-400 font-medium uppercase">Before Kick-Off</p>
-                        <p className="text-yellow-500 font-bold text-lg">12 Months FREE</p>
-                      </div>
+                  <div className="flex flex-col p-6 gap-6">
+                    <div className="flex items-center">
+                      <span className="text-3xl mr-4">🏆</span>
+                      <span className="text-white text-lg"><span className="font-bold">World Cup Winner</span> = 12 Months FREE</span>
                     </div>
-                    {/* Tier 2 */}
-                    <div className="flex items-center p-4 border-b border-gray-700 bg-blue-900/20">
-                      <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-blue-500/20 rounded-full">
-                         ⚽
-                      </div>
-                      <div className="ml-4">
-                        <p className="text-xs text-gray-400 font-medium uppercase">Group Stage</p>
-                        <p className="text-[#2DD4BF] font-bold text-lg">6 Months FREE</p>
-                      </div>
+                    <div className="flex items-center">
+                      <span className="text-3xl mr-4">🥈</span>
+                      <span className="text-white text-lg"><span className="font-bold">Runner-Up</span> = 6 Months FREE</span>
                     </div>
-                    {/* Tier 3 */}
-                    <div className="flex items-center p-4 border-b border-gray-700 bg-green-900/20">
-                      <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-green-500/20 rounded-full">
-                         🥈
-                      </div>
-                      <div className="ml-4">
-                        <p className="text-xs text-gray-400 font-medium uppercase">Quarter Finals</p>
-                        <p className="text-green-400 font-bold text-lg">3 Months FREE</p>
-                      </div>
+                    <div className="flex items-center">
+                      <span className="text-3xl mr-4">🥉</span>
+                      <span className="text-white text-lg"><span className="font-bold">Third Place</span> = 3 Months FREE</span>
                     </div>
-                    {/* Tier 4 */}
-                    <div className="flex items-center p-4 bg-purple-900/20">
-                      <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-purple-500/20 rounded-full">
-                         🥉
-                      </div>
-                      <div className="ml-4">
-                        <p className="text-xs text-gray-400 font-medium uppercase">Semi Finals</p>
-                        <p className="text-purple-400 font-bold text-lg">1 Month FREE</p>
-                      </div>
+                    <div className="mt-2 text-sm text-gray-400">
+                      * <span className="font-bold">Eligibility</span> You must have joined before the knockout stages.
                     </div>
                   </div>
                 </div>

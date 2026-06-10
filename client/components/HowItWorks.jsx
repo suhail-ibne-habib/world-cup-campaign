@@ -4,7 +4,7 @@ export default function HowItWorks() {
   const steps = [
     {
       id: 1,
-      title: '1. JOIN DEAL360',
+      title: '1. JOIN DEAL 360',
       description: 'Sign up for free or subscribe to a paid plan.',
       icon: (
         <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -36,7 +36,7 @@ export default function HowItWorks() {
     {
       id: 4,
       title: '4. WIN BIG',
-      description: 'If one of your teams wins, you can win up to 12 months FREE Deal360!',
+      description: 'If one of your teams wins, you can win up to 12 months FREE Deal 360!',
       icon: (
         <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
