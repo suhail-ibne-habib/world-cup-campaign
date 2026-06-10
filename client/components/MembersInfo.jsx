@@ -13,8 +13,12 @@ export default function MembersInfo() {
             <div className="bg-white rounded-xl p-8 text-center shadow-sm border border-gray-100 flex flex-col h-full">
               <h3 className="text-gray-800 font-bold uppercase tracking-wider mb-8 text-sm">Free Members</h3>
               <div className="flex-grow flex flex-col items-center justify-center">
+                {/* Random team icon - lottery/draw bowl */}
                 <div className="w-24 h-24 bg-[#7FFFD4] rounded-full flex items-center justify-center mb-6">
-                   <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                  <svg className="w-12 h-12 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 2C9 2 6 4 6 7c0 1.5.6 2.8 1.5 3.8L12 22l4.5-11.2C17.4 9.8 18 8.5 18 7c0-3-3-5-6-5z"/>
+                    <circle cx="12" cy="7" r="2"/>
+                  </svg>
                 </div>
                 <p className="text-gray-800 font-bold text-lg mb-8">1 Random Team</p>
               </div>
@@ -28,12 +32,22 @@ export default function MembersInfo() {
               <h3 className="text-red-400 font-bold uppercase tracking-wider mb-8 text-sm">Paid Members</h3>
               <div className="flex-grow flex flex-col items-center justify-center">
                 <div className="flex items-center justify-center space-x-2 mb-6">
+                  {/* Random team icon */}
                   <div className="w-16 h-16 bg-red-400 rounded-full flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 2C9 2 6 4 6 7c0 1.5.6 2.8 1.5 3.8L12 22l4.5-11.2C17.4 9.8 18 8.5 18 7c0-3-3-5-6-5z"/>
+                      <circle cx="12" cy="7" r="2"/>
+                    </svg>
                   </div>
                   <span className="text-gray-400 text-2xl font-light">+</span>
+                  {/* Select team of choice icon - hand pointing/selecting */}
                   <div className="w-16 h-16 bg-red-400 rounded-full flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 10l-4.5-2.5M15 10l4.5-2.5M12 15v5.5M9 10L12 15M15 10L12 15M9 10h6"></path></svg>
+                    <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M9 11V6a2 2 0 014 0v5"/>
+                      <path d="M13 10a2 2 0 014 0v3"/>
+                      <path d="M5 13a2 2 0 014 0v3a4 4 0 004 4h2a4 4 0 004-4v-2"/>
+                      <path d="M9 13v-2"/>
+                    </svg>
                   </div>
                 </div>
                 <p className="text-gray-800 font-bold text-lg leading-tight mb-8">
@@ -50,56 +64,40 @@ export default function MembersInfo() {
 
           {/* Right Side: Prize Table */}
           <div className="lg:col-span-6 lg:pl-10">
-            <h3 className="text-center text-xl font-bold text-gray-900 mb-8 uppercase">Join Early. Win Bigger.</h3>
+            <h3 className="text-center text-xl font-bold text-gray-900 mb-8 uppercase">Prize Structure</h3>
             
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-              <div className="grid grid-cols-2 text-sm font-semibold text-gray-500 uppercase tracking-wider p-4 border-b border-gray-100">
-                <div>Join Period</div>
-                <div className="text-right pr-4">Prize</div>
-              </div>
-              
               <div className="divide-y divide-gray-100">
-                {/* Row 1 */}
+                {/* Row 1 - World Cup Winner */}
                 <div className="flex items-center justify-between p-4 bg-white">
                   <div className="flex items-center">
-                    <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center text-red-400 mr-3">🏆</div>
-                    <span className="font-medium text-gray-700">Before Kick-Off</span>
+                    <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center mr-3">🏆</div>
+                    <span className="font-medium text-gray-700">World Cup Winner</span>
                   </div>
                   <div className="bg-red-400 text-white font-bold py-2 px-6 rounded-sm w-48 text-center text-sm shadow-sm">
                     12 Months FREE
                   </div>
                 </div>
                 
-                {/* Row 2 */}
+                {/* Row 2 - Runner-Up */}
                 <div className="flex items-center justify-between p-4 bg-white">
                   <div className="flex items-center">
-                    <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center text-[#7FFFD4] mr-3">🏆</div>
-                    <span className="font-medium text-gray-700">Group Stage</span>
+                    <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center mr-3">🥈</div>
+                    <span className="font-medium text-gray-700">Runner-Up</span>
                   </div>
                   <div className="bg-teal-400 text-white font-bold py-2 px-6 rounded-sm w-48 text-center text-sm shadow-sm">
                     6 Months FREE
                   </div>
                 </div>
                 
-                {/* Row 3 */}
+                {/* Row 3 - Third Place */}
                 <div className="flex items-center justify-between p-4 bg-white">
                   <div className="flex items-center">
-                    <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center text-red-400 mr-3">🏆</div>
-                    <span className="font-medium text-gray-700">Quarter Finals</span>
+                    <div className="w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center mr-3">🥉</div>
+                    <span className="font-medium text-gray-700">Third Place</span>
                   </div>
                   <div className="bg-red-400 text-white font-bold py-2 px-6 rounded-sm w-48 text-center text-sm shadow-sm">
                     3 Months FREE
-                  </div>
-                </div>
-                
-                {/* Row 4 */}
-                <div className="flex items-center justify-between p-4 bg-white">
-                  <div className="flex items-center">
-                    <div className="w-8 h-8 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-400 mr-3">🏆</div>
-                    <span className="font-medium text-gray-700">Semi Finals</span>
-                  </div>
-                  <div className="bg-teal-400 text-white font-bold py-2 px-6 rounded-sm w-48 text-center text-sm shadow-sm">
-                    1 Month FREE
                   </div>
                 </div>
               </div>

@@ -20,7 +20,7 @@ export default function TeamSelection() {
            </p>
         </div>
 
-        <TeamsGrid limit={11} showViewAll />
+        <TeamsGrid />
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8 border-t border-gray-100 pt-10">
           <div className="flex items-center justify-center md:justify-start">

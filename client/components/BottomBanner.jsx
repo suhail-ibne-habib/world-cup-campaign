@@ -18,11 +18,14 @@ export default function BottomBanner() {
                 <span className="block">ONE TEAM. ONE TOURNAMENT.</span>
                 <span className="block mt-1">ONE CHANCE TO <span className="text-red-400">WIN BIG.</span></span>
               </h2>
+              <p className="mt-3 text-gray-400 text-sm sm:text-base font-medium">
+                Join Early. Build Early. Win Bigger.
+              </p>
             </div>
             
             <div className="flex-shrink-0">
               <button className="bg-red-400 hover:bg-red-500 text-white font-bold py-4 px-8 rounded-md transition duration-300 shadow-lg whitespace-nowrap">
-                JOIN DEAL360 TODAY
+                JOIN DEAL 360 TODAY
               </button>
             </div>
           </div>
