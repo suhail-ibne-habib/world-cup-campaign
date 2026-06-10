@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import TeamsGrid from "@/components/TeamsGrid";
 import TeamFlag from "@/components/TeamFlag";
 import { verifyUserEmail, selectTeams } from "@/lib/api";
@@ -96,12 +97,7 @@ export default function JoinFlow() {
       <header className="bg-white border-b border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-5 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 text-gray-800 font-extrabold tracking-tight">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="text-red-400">
-              <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor" />
-              <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            Deal 360
+            <Image src="/logo.jpg" alt="Deal 360 Logo" width={56} height={56} className="object-contain" priority />
           </Link>
           <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">
             World Cup Challenge

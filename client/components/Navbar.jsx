@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   return (
@@ -8,14 +9,9 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2">
-            <div className="text-coral-500 text-3xl font-bold flex items-center">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-red-400 mr-2">
-                <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
-                <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              <span className="text-gray-800 font-extrabold tracking-tight">Deal 360</span>
-            </div>
+            <Link href="/" className="text-coral-500 text-3xl font-bold flex items-center">
+              <Image src="/logo.jpg" alt="Deal 360 Logo" width={64} height={64} className="object-contain" priority />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
