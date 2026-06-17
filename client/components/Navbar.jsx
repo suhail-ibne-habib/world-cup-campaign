@@ -10,7 +10,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2">
             <Link href="/" className="text-coral-500 text-3xl font-bold flex items-center">
-              <Image src="/logo.jpeg" alt="Deal 360 Logo" width={64} height={64} className="object-contain" priority />
+              <Image src="/logo.svg" alt="Deal 360 Logo" width={180} height={55} className="object-contain" priority />
             </Link>
           </div>
 

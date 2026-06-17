@@ -97,7 +97,7 @@ export default function JoinFlow() {
       <header className="bg-white border-b border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-5 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 text-gray-800 font-extrabold tracking-tight">
-            <Image src="/logo.jpeg" alt="Deal 360 Logo" width={56} height={56} className="object-contain" priority />
+            <Image src="/logo.svg" alt="Deal 360 Logo" width={160} height={48} className="object-contain" priority />
           </Link>
           <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">
             World Cup Challenge

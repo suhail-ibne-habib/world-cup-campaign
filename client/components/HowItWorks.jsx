@@ -71,8 +71,8 @@ export default function HowItWorks() {
               <div key={step.id} className="relative text-center flex flex-col items-center">
                 
                 {/* Icon Circle */}
-                <div className="w-24 h-24 mx-auto bg-red-300 rounded-full flex items-center justify-center relative z-10 shadow-sm border-4 border-white">
-                   <div className="w-16 h-16 bg-red-400 rounded-full flex items-center justify-center shadow-inner">
+                <div className="w-24 h-24 mx-auto rounded-full flex items-center justify-center relative z-10 shadow-sm border-4 border-white" style={{backgroundColor: '#f9b0aa'}}>
+                   <div className="w-16 h-16 rounded-full flex items-center justify-center shadow-inner" style={{backgroundColor: '#F88379'}}>
                       {step.icon}
                    </div>
                 </div>

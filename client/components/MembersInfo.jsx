@@ -22,9 +22,14 @@ export default function MembersInfo() {
                 </div>
                 <p className="text-gray-800 font-bold text-lg mb-8">1 Random Team</p>
               </div>
-              <button className="w-full bg-[#7FFFD4] hover:bg-teal-500 text-white font-bold py-3 px-4 rounded transition duration-300">
+              <a
+                href="https://deal360.ae/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center w-full bg-teal-400 hover:bg-[#5cd9b0] text-white font-bold py-3 px-4 rounded transition duration-300"
+              >
                 JOIN FOR FREE
-              </button>
+              </a>
             </div>
 
             {/* Paid Members Card */}
@@ -85,7 +90,7 @@ export default function MembersInfo() {
                     <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center mr-3">🥈</div>
                     <span className="font-medium text-gray-700">Runner-Up</span>
                   </div>
-                  <div className="bg-teal-400 text-white font-bold py-2 px-6 rounded-sm w-48 text-center text-sm shadow-sm">
+                  <div className="text-white font-bold py-2 px-6 rounded-sm w-48 text-center text-sm shadow-sm" style={{backgroundColor: '#7FFFD4'}}>
                     6 Months FREE
                   </div>
                 </div>

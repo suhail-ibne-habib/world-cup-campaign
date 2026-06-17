@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 130" width="420" height="130">
+  <!-- Location pin outer shape -->
+  <g transform="translate(20, 10)">
+    <!-- Circular arrow ring around the pin -->
+    <circle cx="55" cy="52" r="46" fill="none" stroke="#F88379" stroke-width="7" stroke-dasharray="240 50" stroke-linecap="round"/>
+    <!-- Arrow tip on the ring (top-right) -->
+    <polyline points="95,20 102,12 108,22" fill="none" stroke="#F88379" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Location pin body -->
+    <path d="M55 14 C38 14 25 27 25 44 C25 66 55 95 55 95 C55 95 85 66 85 44 C85 27 72 14 55 14 Z" fill="#F88379"/>
+
+    <!-- Aquamarine house icon inside pin -->
+    <!-- House background circle -->
+    <circle cx="55" cy="44" r="18" fill="#7FFFD4"/>
+    <!-- House shape -->
+    <path d="M46 47 L46 53 L64 53 L64 47 L55 38 Z" fill="white"/>
+    <rect x="51" y="47" width="8" height="6" fill="#7FFFD4"/>
+    <!-- Checkmark -->
+    <polyline points="49,46 53,50 61,42" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- "Deal 360" text -->
+  <text x="155" y="82" font-family="'Arial Rounded MT Bold', 'Arial Black', Arial, sans-serif" font-size="58" font-weight="900" fill="#F88379" letter-spacing="-1">Deal 360</text>
+</svg>

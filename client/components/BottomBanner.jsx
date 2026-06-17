@@ -16,7 +16,7 @@ export default function BottomBanner() {
             <div className="text-center md:text-left mb-8 md:mb-0">
               <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-wide leading-tight">
                 <span className="block">ONE TEAM. ONE TOURNAMENT.</span>
-                <span className="block mt-1">ONE CHANCE TO <span className="text-red-400">WIN BIG.</span></span>
+                <span className="block mt-1">ONE CHANCE TO <span style={{color: '#F88379'}}>WIN BIG.</span></span>
               </h2>
               <p className="mt-3 text-gray-400 text-sm sm:text-base font-medium">
                 Join Early. Build Early. Win Bigger.
@@ -24,9 +24,14 @@ export default function BottomBanner() {
             </div>
             
             <div className="flex-shrink-0">
-              <button className="bg-red-400 hover:bg-red-500 text-white font-bold py-4 px-8 rounded-md transition duration-300 shadow-lg whitespace-nowrap">
+              <a
+                href="https://deal360.ae/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-red-400 hover:bg-red-500 text-white font-bold py-4 px-8 rounded-md transition duration-300 shadow-lg whitespace-nowrap"
+              >
                 JOIN DEAL 360 TODAY
-              </button>
+              </a>
             </div>
           </div>
           

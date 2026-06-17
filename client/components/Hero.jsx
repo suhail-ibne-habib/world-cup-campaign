@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -12,24 +13,26 @@ export default function Hero() {
           
           {/* Left Content */}
           <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-            <h2 className="text-sm font-semibold text-red-400 tracking-wider uppercase mb-2">
-              Deal 360
-            </h2>
+            <div className="mb-4">
+              <Image src="/logo.svg" alt="Deal 360 Logo" width={160} height={48} className="object-contain brightness-0 invert" priority />
+            </div>
             <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl lg:text-7xl">
               <span className="block">WORLD CUP</span>
-              <span className="block text-red-400">CHALLENGE</span>
+              <span className="block" style={{color: '#F88379'}}>CHALLENGE</span>
             </h1>
             <p className="mt-6 text-xl text-gray-300 sm:text-2xl font-light">
-              <span className="font-bold text-[#2DD4BF]">Win 12 months free</span><br/>
-              <span className="text-yellow-500">If your team win the World Cup , you win a prize. We also have prizes for 2nd place and 3rd place too.</span>
+              <span className="font-bold" style={{color: '#7FFFD4'}}>Win 12 months free</span><br/>
+              <span className="text-gray-300">If your team win the World Cup , you win a prize. We also have prizes for 2nd place and 3rd place too.</span>
             </p>
             <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link
-                href="/join"
+              <a
+                href="https://deal360.ae/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block text-center bg-red-400 hover:bg-red-500 text-white font-bold py-4 px-8 rounded-md transition duration-300 shadow-lg text-sm sm:text-base tracking-wide"
               >
-                JOIN NOW - IT&apos;S FREE
-              </Link>
+                JOIN FOR FREE
+              </a>
               <a href="https://deal360.ae/en#plan" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-gray-600 text-white hover:bg-gray-800 font-bold py-4 px-8 rounded-md transition duration-300 text-sm sm:text-base tracking-wide text-center">
                 VIEW PLANS
               </a>
@@ -38,7 +41,7 @@ export default function Hero() {
             {/* Small info text */}
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 text-sm text-gray-400">
               <div className="flex items-center">
-                <svg className="w-5 h-5 text-[#2DD4BF] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <svg className="w-5 h-5 mr-2" style={{color: '#7FFFD4'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 One prize per member
               </div>
               <div className="hidden sm:block text-gray-600">•</div>
