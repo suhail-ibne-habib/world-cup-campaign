@@ -1,5 +1,7 @@
 'use client';
 import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 /* ── Icons ─────────────────────────────────────────────────── */
 const PeopleIcon = () => (
@@ -144,6 +146,13 @@ export default function Hero() {
           {/* Constrain text to left ~48% on desktop */}
           <div className="w-full lg:max-w-[48%] py-20 lg:py-0">
 
+            {/* Logo */}
+            <div className="mb-8">
+              <Link href="/">
+                <Image src="/logo1.png" alt="Deal 360 Logo" width={180} height={55} className="object-contain" priority />
+              </Link>
+            </div>
+
             {/* Headline */}
             <h1
               className="font-black leading-[1.0] tracking-tight mb-6"
@@ -186,7 +195,7 @@ export default function Hero() {
                   letterSpacing: '0.13em',
                 }}
               >
-                JOIN NOW
+                Join Now
               </a>
               <div className="flex -ml-1" style={{ color: '#3ecfbe' }}>
                 <ChevronRight />
@@ -264,31 +273,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* ══════════════════════════════════════════════════════
-          LAYER 4 — Deal 360 floating badge
-      ══════════════════════════════════════════════════════ */}
-      <div
-        className="absolute z-20"
-        style={{ bottom: '26%', left: '43%', transform: 'translateX(-50%)', pointerEvents: 'none' }}
-      >
-        <div className="flex flex-col items-center">
-          <div
-            className="w-14 h-14 rounded-full flex items-center justify-center shadow-2xl border-4 border-white"
-            style={{ background: 'linear-gradient(135deg,#4fd1c5,#38b2ac)' }}
-          >
-            <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7" stroke="none">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
-                fill="rgba(255,255,255,0.3)" />
-              <path d="M9 9l3-3 3 3v5H9V9z" fill="white" />
-              <path d="M11 14h2v-2h-2z" fill="#38b2ac" />
-            </svg>
-          </div>
-          <div className="mt-1.5 text-center leading-none bg-white/80 backdrop-blur-md rounded-2xl px-3 py-1.5 shadow-lg">
-            <span className="block text-sm font-black" style={{ color: '#F88379' }}>Deal</span>
-            <span className="block text-2xl font-black leading-none" style={{ color: '#F88379' }}>360</span>
-          </div>
-        </div>
-      </div>
+
 
     </section>
   );

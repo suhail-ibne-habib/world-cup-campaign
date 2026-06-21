@@ -97,9 +97,9 @@ export default function JoinFlow() {
       <header className="bg-white border-b border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-5 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 text-gray-800 font-extrabold tracking-tight">
-            <Image src="/logo.svg" alt="Deal 360 Logo" width={160} height={48} className="object-contain" priority />
+            <Image src="/logo1.png" alt="Deal 360 Logo" width={160} height={48} className="object-contain" priority />
           </Link>
-          <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">
+          <span className="text-xs font-semibold tracking-wider text-gray-400">
             World Cup Challenge
           </span>
         </div>
@@ -112,11 +112,10 @@ export default function JoinFlow() {
               <div key={s.number} className="flex items-center">
                 <div className="flex flex-col items-center">
                   <div
-                    className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-colors ${
-                      step >= s.number
-                        ? "bg-red-400 text-white"
-                        : "bg-gray-200 text-gray-500"
-                    }`}
+                    className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-colors ${step >= s.number
+                      ? "bg-red-400 text-white"
+                      : "bg-gray-200 text-gray-500"
+                      }`}
                   >
                     {step > s.number ? (
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,18 +126,16 @@ export default function JoinFlow() {
                     )}
                   </div>
                   <span
-                    className={`mt-2 text-xs font-medium hidden sm:block ${
-                      step >= s.number ? "text-gray-800" : "text-gray-400"
-                    }`}
+                    className={`mt-2 text-xs font-medium hidden sm:block ${step >= s.number ? "text-gray-800" : "text-gray-400"
+                      }`}
                   >
                     {s.label}
                   </span>
                 </div>
                 {index < STEPS.length - 1 && (
                   <div
-                    className={`w-16 sm:w-24 h-0.5 mx-2 sm:mx-4 mb-6 sm:mb-0 transition-colors ${
-                      step > s.number ? "bg-red-400" : "bg-gray-200"
-                    }`}
+                    className={`w-16 sm:w-24 h-0.5 mx-2 sm:mx-4 mb-6 sm:mb-0 transition-colors ${step > s.number ? "bg-red-400" : "bg-gray-200"
+                      }`}
                   />
                 )}
               </div>
@@ -148,6 +145,9 @@ export default function JoinFlow() {
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 sm:p-10">
             {step === 1 && (
               <div>
+                <Link href="/" className="flex items-center gap-2 text-gray-800 font-extrabold tracking-tight">
+                  <Image src="/logo1.png" alt="Deal 360 Logo" width={160} height={48} className="object-contain" priority />
+                </Link>
                 <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-900 text-center">
                   Join the World Cup Challenge
                 </h1>
@@ -168,9 +168,8 @@ export default function JoinFlow() {
                       if (emailError) setEmailError("");
                     }}
                     placeholder="you@example.com"
-                    className={`w-full px-4 py-3 rounded-md border text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-400/30 focus:border-red-400 transition ${
-                      emailError ? "border-red-400" : "border-gray-300"
-                    }`}
+                    className={`w-full px-4 py-3 rounded-md border text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-400/30 focus:border-red-400 transition ${emailError ? "border-red-400" : "border-gray-300"
+                      }`}
                   />
                   {emailError && (
                     <p className="mt-2 text-sm text-red-500">{emailError}</p>

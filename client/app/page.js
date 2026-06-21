@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import MembersInfo from "@/components/MembersInfo";
@@ -8,8 +7,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#7FFFD4] selection:text-white">
-      <Navbar />
+    <div className="min-h-screen bg-white font-sans selection:bg-[#7FFFD4] selection:text-white relative">
       <main>
         <Hero />
         <HowItWorks />

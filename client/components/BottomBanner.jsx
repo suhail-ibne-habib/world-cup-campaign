@@ -15,8 +15,8 @@ export default function BottomBanner() {
           <div className="relative z-20 py-12 px-8 sm:px-12 lg:px-16 flex flex-col md:flex-row items-center justify-between">
             <div className="text-center md:text-left mb-8 md:mb-0">
               <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-wide leading-tight">
-                <span className="block">ONE TEAM. ONE TOURNAMENT.</span>
-                <span className="block mt-1">ONE CHANCE TO <span style={{color: '#F88379'}}>WIN BIG.</span></span>
+                <span className="block">One Team. One Tournament.</span>
+                <span className="block mt-1">One Chance to <span style={{color: '#F88379'}}>Win Big.</span></span>
               </h2>
               <p className="mt-3 text-gray-400 text-sm sm:text-base font-medium">
                 Join Early. Build Early. Win Bigger.
@@ -30,7 +30,7 @@ export default function BottomBanner() {
                 rel="noopener noreferrer"
                 className="inline-block bg-red-400 hover:bg-red-500 text-white font-bold py-4 px-8 rounded-md transition duration-300 shadow-lg whitespace-nowrap"
               >
-                JOIN DEAL 360 TODAY
+                Join Deal 360 Today
               </a>
             </div>
           </div>

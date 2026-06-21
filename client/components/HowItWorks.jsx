@@ -4,7 +4,7 @@ export default function HowItWorks() {
   const steps = [
     {
       id: 1,
-      title: '1. JOIN DEAL 360',
+      title: '1. Join Deal 360',
       description: 'Sign up for free or subscribe to a paid plan.',
       icon: (
         <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -14,18 +14,17 @@ export default function HowItWorks() {
     },
     {
       id: 2,
-      title: '2. GET YOUR TEAM(S)',
+      title: '2. Get Your Team(s)',
       description: 'Free members get 1 random team. Paid members get 1 random team + 1 team of choice.',
       icon: (
-        <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 10l-4.5-2.5M15 10l4.5-2.5M12 15v5.5M9 10L12 15M15 10L12 15M9 10h6"></path>
+        <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 512 512">
+          <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm-53.7-278.4l24.4 75.2-43.7 60.9-52.2-6.4c-6.1-8.4-12.1-16.9-16.8-26.2-14.3-28.1-21.5-58.5-21.7-89.2l38.9-36.4 71.1 22.1zm84.5-55.8c12.2 0 24.3 1.8 36 5.5l26.2 80.6-50.5 73.4H199.5l-50.5-73.4 26.2-80.6c11.7-3.7 23.8-5.5 36-5.5zm115 55.8l71.1-22.1 38.9 36.4c-.2 30.7-7.4 61.1-21.7 89.2-4.7 9.3-10.7 17.8-16.8 26.2l-52.2 6.4-43.7-60.9 24.4-75.2zm-222.8 190l10.9-33.5h184.2l10.9 33.5-31.9 44c-35.4 15-74.8 23.3-115.3 23.3s-79.9-8.3-115.3-23.3l-31.9-44l10.9-33.5z"/>
         </svg>
       )
     },
     {
       id: 3,
-      title: '3. FOLLOW THE WORLD CUP',
+      title: '3. Follow the World Cup',
       description: 'Enjoy the tournament and cheer for your teams.',
       icon: (
         <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -35,7 +34,7 @@ export default function HowItWorks() {
     },
     {
       id: 4,
-      title: '4. WIN BIG',
+      title: '4. Win Big',
       description: 'If one of your teams wins, you can win up to 12 months FREE Deal 360!',
       icon: (
         <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,7 +54,7 @@ export default function HowItWorks() {
              <div className="w-full border-t border-gray-200"></div>
            </div>
            <div className="relative flex justify-center">
-             <span className="px-6 bg-white text-lg font-bold text-gray-800 tracking-wider uppercase">
+             <span className="px-6 bg-white text-lg font-bold text-gray-800 tracking-wider">
                How It Works
              </span>
            </div>

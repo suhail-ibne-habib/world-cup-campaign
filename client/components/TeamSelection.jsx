@@ -11,7 +11,7 @@ export default function TeamSelection() {
              <div className="w-full border-t border-gray-200"></div>
            </div>
            <div className="relative flex justify-center">
-             <span className="px-6 bg-white text-lg font-bold text-gray-800 tracking-wider uppercase">
+             <span className="px-6 bg-white text-lg font-bold text-gray-800 tracking-wider">
                Choose Your Team
              </span>
            </div>
